@@ -42,4 +42,4 @@ def read_root():
 if __name__ == "__main__":
     import uvicorn
     import os
-    uvicorn.run(app,host=os.enviorn['HOST'],port=os.enviorn['PORT'])
+    uvicorn.run(app,host=os.environ['HOST'],port=os.environ['PORT'])
