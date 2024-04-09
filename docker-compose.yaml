@@ -1,0 +1,20 @@
+version: '3'
+services:
+  api:
+    build:
+      context: .
+    container_name: api
+    image: api
+    restart: always
+    ports:
+      - "8000:8000"
+    command: "python -m uvicorn main:app --host 0.0.0.0"
+  #api1:
+      #container_name: api1
+      #image: api
+      #restart: always
+      #ports:
+        #- "8001:8000"
+      #command: "python -m uvicorn main:app --host 0.0.0.0"
+
+
